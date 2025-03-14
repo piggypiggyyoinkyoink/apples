@@ -46,6 +46,21 @@ public class ModFoodProperties {
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 0), 1.0f)
             .alwaysEdible()
             .build();
+public static final FoodProperties IRON_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2400, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 1800, 0), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties ENCHANTED_IRON_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 1), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 4800, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 4200, 1), 1.0f)
+            .alwaysEdible()
+            .build();
 
 
 

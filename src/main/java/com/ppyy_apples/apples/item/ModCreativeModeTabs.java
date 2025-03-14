@@ -21,10 +21,12 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.ENCHANTED_DIAMOND_APPLE.get()))
                     .title(Component.translatable("creativetab.ppyy_apples.ppyy_apples"))
                     .displayItems((itemDisplayParameters, output) ->{
-                        output.accept(ModItems.DIAMOND_APPLE);
-                        output.accept(ModItems.ENCHANTED_DIAMOND_APPLE);
                         output.accept(ModItems.COPPER_APPLE);
                         output.accept(ModItems.ENCHANTED_COPPER_APPLE);
+                        output.accept(ModItems.IRON_APPLE);
+                        output.accept(ModItems.ENCHANTED_IRON_APPLE);
+                        output.accept(ModItems.DIAMOND_APPLE);
+                        output.accept(ModItems.ENCHANTED_DIAMOND_APPLE);
 
                     })
                     .build());
