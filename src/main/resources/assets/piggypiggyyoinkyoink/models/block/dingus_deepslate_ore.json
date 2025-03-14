@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "piggypiggyyoinkyoink:block/dingus_deepslate_ore"
-  }
-}
