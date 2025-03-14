@@ -76,6 +76,21 @@ public class ModFoodProperties {
             .effect(() -> new MobEffectInstance(MobEffects.JUMP, 4800, 2), 1.0f)
             .alwaysEdible()
             .build();
+    public static final FoodProperties PRISMARINE_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 4800, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 4800, 0), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties ENCHANTED_PRISMARINE_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 12000, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.CONDUIT_POWER, 12000, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 4800, 0), 1.0f)
+            .alwaysEdible()
+            .build();
 
 
 

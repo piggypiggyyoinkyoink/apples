@@ -29,6 +29,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ENCHANTED_DIAMOND_APPLE);
                         output.accept(ModItems.AMETHYST_APPLE);
                         output.accept(ModItems.ENCHANTED_AMETHYST_APPLE);
+                        output.accept(ModItems.PRISMARINE_APPLE);
+                        output.accept(ModItems.ENCHANTED_PRISMARINE_APPLE);
 
                     })
                     .build());
