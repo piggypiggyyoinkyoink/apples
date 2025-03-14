@@ -46,7 +46,7 @@ public class ModFoodProperties {
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 0), 1.0f)
             .alwaysEdible()
             .build();
-public static final FoodProperties IRON_APPLE = new FoodProperties.Builder()
+    public static final FoodProperties IRON_APPLE = new FoodProperties.Builder()
             .nutrition(3)
             .saturationModifier(8.5f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2400, 0), 1.0f)
@@ -59,6 +59,21 @@ public static final FoodProperties IRON_APPLE = new FoodProperties.Builder()
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 1), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 4800, 0), 1.0f)
             .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 4200, 1), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties AMETHYST_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 4800, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 0), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties ENCHANTED_AMETHYST_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 12000, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 4800, 1), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 4800, 2), 1.0f)
             .alwaysEdible()
             .build();
 
