@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:waxed_exposed_copper"
+    },
+    "A": {
+      "item": "minecraft:apple"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DAD",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ppyy_apples:enchanted_copper_apple"
+  }
+}

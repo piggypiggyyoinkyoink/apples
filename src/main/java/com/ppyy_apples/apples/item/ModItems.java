@@ -14,6 +14,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.DIAMOND_APPLE)));
     public static final DeferredItem<Item> ENCHANTED_DIAMOND_APPLE = ITEMS.register("enchanted_diamond_apple",
             () -> new EnchantedAppleItem(new Item.Properties().food(ModFoodProperties.ENCHANTED_DIAMOND_APPLE)));
+    public static final DeferredItem<Item> COPPER_APPLE = ITEMS.register("copper_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.COPPER_APPLE)));
+    public static final DeferredItem<Item> ENCHANTED_COPPER_APPLE = ITEMS.register("enchanted_copper_apple",
+            () -> new EnchantedAppleItem(new Item.Properties().food(ModFoodProperties.ENCHANTED_COPPER_APPLE)));
 
 
 

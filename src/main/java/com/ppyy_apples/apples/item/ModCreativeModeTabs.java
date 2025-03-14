@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) ->{
                         output.accept(ModItems.DIAMOND_APPLE);
                         output.accept(ModItems.ENCHANTED_DIAMOND_APPLE);
+                        output.accept(ModItems.COPPER_APPLE);
+                        output.accept(ModItems.ENCHANTED_COPPER_APPLE);
 
                     })
                     .build());
