@@ -108,6 +108,22 @@ public class ModFoodProperties {
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 2), 1.0f)
             .alwaysEdible()
             .build();
+    public static final FoodProperties QUARTZ_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2400, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 600, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 600, 1), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties ENCHANTED_QUARTZ_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 9600, 1), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.SLOW_FALLING, 1800, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 1800, 2), 1.0f)
+            .alwaysEdible()
+            .build();
 
 
 
