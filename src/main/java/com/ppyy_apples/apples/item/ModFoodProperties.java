@@ -91,6 +91,23 @@ public class ModFoodProperties {
             .effect(() -> new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 4800, 0), 1.0f)
             .alwaysEdible()
             .build();
+    public static final FoodProperties EMERALD_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 9600, 1), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 6000, 1), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 120, 1), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties ENCHANTED_EMERALD_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 12000, 2), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 9600, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 7200, 2), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 2), 1.0f)
+            .alwaysEdible()
+            .build();
 
 
 

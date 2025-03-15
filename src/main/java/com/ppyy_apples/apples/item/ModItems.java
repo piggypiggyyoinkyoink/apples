@@ -30,6 +30,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.PRISMARINE_APPLE)));
     public static final DeferredItem<Item> ENCHANTED_PRISMARINE_APPLE = ITEMS.register("enchanted_prismarine_apple",
             () -> new EnchantedAppleItem(new Item.Properties().food(ModFoodProperties.ENCHANTED_PRISMARINE_APPLE)));
+    public static final DeferredItem<Item> EMERALD_APPLE = ITEMS.register("emerald_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.EMERALD_APPLE)));
+    public static final DeferredItem<Item> ENCHANTED_EMERALD_APPLE = ITEMS.register("enchanted_emerald_apple",
+            () -> new EnchantedAppleItem(new Item.Properties().food(ModFoodProperties.ENCHANTED_EMERALD_APPLE)));
 
 
 
