@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:apple"
+    },
+    "D": {
+      "item": "minecraft:dark_prismarine"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DAD",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ppyy_apples:enchanted_prismarine_apple"
+  }
+}

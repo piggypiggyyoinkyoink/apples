@@ -1,7 +1,7 @@
-package com.piggypiggyyoinkyoink.experimental.datagen;
+package com.ppyy_apples.apples.datagen;
 
-import com.piggypiggyyoinkyoink.experimental.Experimental;
-import com.piggypiggyyoinkyoink.experimental.item.ModItems;
+import com.ppyy_apples.apples.Apples;
+import com.ppyy_apples.apples.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -9,19 +9,27 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 public class ModItemModelProvider extends ItemModelProvider {
 
     public ModItemModelProvider(PackOutput output,  ExistingFileHelper existingFileHelper) {
-        super(output, Experimental.MODID, existingFileHelper);
+        super(output, Apples.MODID, existingFileHelper);
     }
 
     @Override
     protected void registerModels() {
-        basicItem(ModItems.DINGUS.get());
-        basicItem(ModItems.RAW_DINGUS.get());
-        basicItem(ModItems.RADISH.get());
+        basicItem(ModItems.IRON_APPLE.get());
+        basicItem(ModItems.ENCHANTED_IRON_APPLE.get());
         basicItem(ModItems.DIAMOND_APPLE.get());
         basicItem(ModItems.ENCHANTED_DIAMOND_APPLE.get());
-        basicItem(ModItems.CHISEL.get());
-        basicItem(ModItems.FROSTFIRE_ICE.get());
-        basicItem(ModItems.STARLIGHT_ASHES.get());
+        basicItem(ModItems.NETHERITE_APPLE.get());
+        basicItem(ModItems.ENCHANTED_NETHERITE_APPLE.get());
+        basicItem(ModItems.EMERALD_APPLE.get());
+        basicItem(ModItems.ENCHANTED_EMERALD_APPLE.get());
+        basicItem(ModItems.COPPER_APPLE.get());
+        basicItem(ModItems.ENCHANTED_COPPER_APPLE.get());
+        basicItem(ModItems.QUARTZ_APPLE.get());
+        basicItem(ModItems.ENCHANTED_QUARTZ_APPLE.get());
+        basicItem(ModItems.PRISMARINE_APPLE.get());
+        basicItem(ModItems.ENCHANTED_PRISMARINE_APPLE.get());
+        basicItem(ModItems.AMETHYST_APPLE.get());
+        basicItem(ModItems.ENCHANTED_AMETHYST_APPLE.get());
 
     }
 }

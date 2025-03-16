@@ -1,11 +1,10 @@
-package com.piggypiggyyoinkyoink.experimental.datagen;
+package com.ppyy_apples.apples.datagen;
 
-import com.piggypiggyyoinkyoink.experimental.Experimental;
+import com.ppyy_apples.apples.Apples;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParamSet;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -17,7 +16,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = Experimental.MODID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = Apples.MODID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
 
     @SubscribeEvent

@@ -1,7 +1,7 @@
-package com.piggypiggyyoinkyoink.experimental.datagen;
+package com.ppyy_apples.apples.datagen;
 
-import com.piggypiggyyoinkyoink.experimental.Experimental;
-import com.piggypiggyyoinkyoink.experimental.block.ModBlocks;
+import com.ppyy_apples.apples.Apples;
+import com.ppyy_apples.apples.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -14,12 +14,12 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagProvider extends BlockTagsProvider {
     public ModBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, Experimental.MODID, existingFileHelper);
+        super(output, lookupProvider, Apples.MODID, existingFileHelper);
     }
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+        /*tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.DINGUS_BLOCK.get())
                 .add(ModBlocks.DINGUS_ORE.get())
                 .add(ModBlocks.DINGUS_DEEPSLATE_ORE.get())
@@ -27,5 +27,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DINGUS_ORE.get())
                 .add(ModBlocks.DINGUS_DEEPSLATE_ORE.get());
+
+         */
     }
 }

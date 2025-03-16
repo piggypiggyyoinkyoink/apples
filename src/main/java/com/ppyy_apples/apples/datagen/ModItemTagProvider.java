@@ -1,8 +1,8 @@
-package com.piggypiggyyoinkyoink.experimental.datagen;
+package com.ppyy_apples.apples.datagen;
 
-import com.piggypiggyyoinkyoink.experimental.Experimental;
-import com.piggypiggyyoinkyoink.experimental.item.ModItems;
-import com.piggypiggyyoinkyoink.experimental.util.ModTags;
+import com.ppyy_apples.apples.Apples;
+import com.ppyy_apples.apples.item.ModItems;
+//import com.ppyy_apples.apples.util.ModTags;  currently unimplemented
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -18,11 +18,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
 
     public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTags, @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, blockTags, Experimental.MODID, existingFileHelper);
+        super(output, lookupProvider, blockTags, Apples.MODID, existingFileHelper);
     }
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        /*
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.DINGUS.get())
                 .add(ModItems.RAW_DINGUS.get())
@@ -30,5 +31,6 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.STICK)
                 .add(Items.COMPASS);
 
+         */
     }
 }

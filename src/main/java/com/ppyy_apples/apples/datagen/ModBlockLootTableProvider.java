@@ -1,7 +1,7 @@
-package com.piggypiggyyoinkyoink.experimental.datagen;
+package com.ppyy_apples.apples.datagen;
 
-import com.piggypiggyyoinkyoink.experimental.block.ModBlocks;
-import com.piggypiggyyoinkyoink.experimental.item.ModItems;
+import com.ppyy_apples.apples.block.ModBlocks;
+import com.ppyy_apples.apples.item.ModItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -27,6 +27,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        /*
         dropSelf(ModBlocks.DINGUS_BLOCK.get());
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
 
@@ -34,6 +35,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.DINGUS_ORE.get(), ModItems.RAW_DINGUS.get())); //first is for silk touch, second is normal.
         add(ModBlocks.DINGUS_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.DINGUS_DEEPSLATE_ORE.get(), ModItems.RAW_DINGUS.get(), 2, 5));
+         */
     }
 
     //this is literally copy pasted and modified from BlockLootSubProvider.java createCopperOreDrop() method from vanilla code.
