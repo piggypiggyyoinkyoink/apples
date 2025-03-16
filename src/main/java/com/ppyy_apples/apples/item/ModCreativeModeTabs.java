@@ -35,6 +35,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ENCHANTED_PRISMARINE_APPLE);
                         output.accept(ModItems.QUARTZ_APPLE);
                         output.accept(ModItems.ENCHANTED_QUARTZ_APPLE);
+                        output.accept(ModItems.NETHERITE_APPLE);
+                        output.accept(ModItems.ENCHANTED_NETHERITE_APPLE);
 
                     })
                     .build());

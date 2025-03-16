@@ -31,6 +31,27 @@ public class ModFoodProperties {
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 600, 2), 1.0f)
             .alwaysEdible()
             .build();
+     public static final FoodProperties NETHERITE_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(9.6f)
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 7200, 3), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 2), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 500, 2), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 9600, 0), 1.0f)
+
+            .alwaysEdible()
+            .build();
+
+    public static final FoodProperties ENCHANTED_NETHERITE_APPLE = new FoodProperties.Builder()
+            .nutrition(5)
+            .saturationModifier(9.6f)
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 12000, 4), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 12000, 1), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 600, 2), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 12000, 0), 1.0f)
+            .alwaysEdible()
+            .build();
+
     public static final FoodProperties COPPER_APPLE = new FoodProperties.Builder()
             .nutrition(3)
             .saturationModifier(8.5f)

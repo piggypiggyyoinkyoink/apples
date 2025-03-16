@@ -38,6 +38,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.QUARTZ_APPLE)));
     public static final DeferredItem<Item> ENCHANTED_QUARTZ_APPLE = ITEMS.register("enchanted_quartz_apple",
             () -> new EnchantedAppleItem(new Item.Properties().food(ModFoodProperties.ENCHANTED_QUARTZ_APPLE)));
+    public static final DeferredItem<Item> NETHERITE_APPLE = ITEMS.register("netherite_apple",
+            () -> new Item(new Item.Properties()
+                    .food(ModFoodProperties.NETHERITE_APPLE)
+                    .fireResistant()));
+    public static final DeferredItem<Item> ENCHANTED_NETHERITE_APPLE = ITEMS.register("enchanted_netherite_apple",
+            () -> new EnchantedAppleItem(new Item.Properties()
+                    .food(ModFoodProperties.ENCHANTED_NETHERITE_APPLE)
+                    .fireResistant()));
 
 
 

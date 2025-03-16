@@ -13,4 +13,5 @@ public class EnchantedAppleItem extends Item {
     public boolean isFoil(ItemStack stack) {
         return true;
     }
+
 }
