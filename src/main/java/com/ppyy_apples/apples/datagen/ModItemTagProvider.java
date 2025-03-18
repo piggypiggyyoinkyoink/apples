@@ -8,6 +8,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -32,5 +33,41 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.COMPASS);
 
          */
+        tag(Tags.Items.FOODS)
+                .add(ModItems.AMETHYST_APPLE.get())
+                .add(ModItems.ENCHANTED_AMETHYST_APPLE.get())
+                .add(ModItems.IRON_APPLE.get())
+                .add(ModItems.ENCHANTED_IRON_APPLE.get())
+                .add(ModItems.COPPER_APPLE.get())
+                .add(ModItems.ENCHANTED_COPPER_APPLE.get())
+                .add(ModItems.DIAMOND_APPLE.get())
+                .add(ModItems.ENCHANTED_DIAMOND_APPLE.get())
+                .add(ModItems.QUARTZ_APPLE.get())
+                .add(ModItems.ENCHANTED_QUARTZ_APPLE.get())
+                .add(ModItems.EMERALD_APPLE.get())
+                .add(ModItems.ENCHANTED_EMERALD_APPLE.get())
+                .add(ModItems.NETHERITE_APPLE.get())
+                .add(ModItems.ENCHANTED_NETHERITE_APPLE.get())
+                .add(ModItems.PRISMARINE_APPLE.get())
+                .add(ModItems.ENCHANTED_PRISMARINE_APPLE.get())
+                ;
+        tag(Tags.Items.FOODS_FRUIT)
+                .add(ModItems.AMETHYST_APPLE.get())
+                .add(ModItems.ENCHANTED_AMETHYST_APPLE.get())
+                .add(ModItems.IRON_APPLE.get())
+                .add(ModItems.ENCHANTED_IRON_APPLE.get())
+                .add(ModItems.COPPER_APPLE.get())
+                .add(ModItems.ENCHANTED_COPPER_APPLE.get())
+                .add(ModItems.DIAMOND_APPLE.get())
+                .add(ModItems.ENCHANTED_DIAMOND_APPLE.get())
+                .add(ModItems.QUARTZ_APPLE.get())
+                .add(ModItems.ENCHANTED_QUARTZ_APPLE.get())
+                .add(ModItems.EMERALD_APPLE.get())
+                .add(ModItems.ENCHANTED_EMERALD_APPLE.get())
+                .add(ModItems.NETHERITE_APPLE.get())
+                .add(ModItems.ENCHANTED_NETHERITE_APPLE.get())
+                .add(ModItems.PRISMARINE_APPLE.get())
+                .add(ModItems.ENCHANTED_PRISMARINE_APPLE.get())
+                ;
     }
 }
