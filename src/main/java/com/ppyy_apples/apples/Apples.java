@@ -3,6 +3,7 @@ package com.ppyy_apples.apples;
 import com.ppyy_apples.apples.block.ModBlocks;
 import com.ppyy_apples.apples.item.ModCreativeModeTabs;
 import com.ppyy_apples.apples.item.ModItems;
+import com.ppyy_apples.apples.loot.ModLootModifiers;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -39,6 +40,7 @@ public class Apples
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
