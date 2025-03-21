@@ -1,0 +1,14 @@
+{
+  "type": "ppyy_apples:add_item",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:pots/trial_chambers/corridor"
+    },
+    {
+      "chance": 0.354,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "ppyy_apples:copper_apple"
+}
