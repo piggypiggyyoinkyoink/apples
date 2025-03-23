@@ -16,6 +16,15 @@
   "item.ppyy_apples.quartz_apple": "Quartz Apple",
   "item.ppyy_apples.enchanted_quartz_apple": "§dEnchanted Quartz Apple§r",
 
+  "item.ppyy_apples.ruby_apple": "Ruby Apple",
+  "item.ppyy_apples.sapphire_apple": "Sapphire Apple",
+  "item.ppyy_apples.onyx_apple": "Onyx Apple",
+  "item.ppyy_apples.jade_apple": "Jade Apple",
+
+  "item.ppyy_apples.tin_apple": "Tin Apple",
+  "item.ppyy_apples.brass_apple": "Brass Apple",
+  "item.ppyy_apples.bronze_apple": "Bronze Apple",
+
 
 
   "creativetab.ppyy_apples.ppyy_apples": "piggypiggyyoinkyoink's Apples"

@@ -1,3 +1,9 @@
-// 1.21.1	2025-03-18T20:13:14.409129	Tags for minecraft:item mod id ppyy_apples
+// 1.21.1	2025-03-23T18:45:38.9208552	Tags for minecraft:item mod id ppyy_apples
 7de5963fa68f57e79c9d9a5ee26236f131734b8c data/c/tags/item/foods.json
 7de5963fa68f57e79c9d9a5ee26236f131734b8c data/c/tags/item/foods/fruit.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/gems/jade.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/gems/onyx.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/gems/ruby.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/gems/sapphire.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ingots/bronze.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/item/ingots/tin.json

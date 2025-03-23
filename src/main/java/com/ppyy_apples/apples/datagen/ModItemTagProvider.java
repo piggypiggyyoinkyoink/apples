@@ -3,6 +3,7 @@ package com.ppyy_apples.apples.datagen;
 import com.ppyy_apples.apples.Apples;
 import com.ppyy_apples.apples.item.ModItems;
 //import com.ppyy_apples.apples.util.ModTags;  currently unimplemented
+import com.ppyy_apples.apples.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -69,5 +70,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.PRISMARINE_APPLE.get())
                 .add(ModItems.ENCHANTED_PRISMARINE_APPLE.get())
                 ;
+        tag(ModTags.Items.RUBY_GEMS);
+        tag(ModTags.Items.SAPPHIRE_GEMS);
+        tag(ModTags.Items.ONYX_GEMS);
+        tag(ModTags.Items.JADE_GEMS);
+
+        tag(ModTags.Items.BRASS_INGOTS);
+        tag(ModTags.Items.TIN_INGOTS);
+        tag(ModTags.Items.BRONZE_INGOTS);
     }
 }

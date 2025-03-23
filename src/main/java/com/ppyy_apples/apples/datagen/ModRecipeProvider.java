@@ -3,6 +3,7 @@ package com.ppyy_apples.apples.datagen;
 import com.ppyy_apples.apples.Apples;
 import com.ppyy_apples.apples.block.ModBlocks;
 import com.ppyy_apples.apples.item.ModItems;
+import com.ppyy_apples.apples.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -10,7 +11,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+import net.neoforged.neoforge.common.conditions.ItemExistsCondition;
+import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
+import net.neoforged.neoforge.common.conditions.TagEmptyCondition;
+import net.neoforged.neoforge.common.crafting.ConditionalRecipeOutput;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -215,9 +221,63 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput, "ppyy_apples:enchanted_prismarine_apple_from_sea_lantern");
 
 
-
         netheriteSmithing(recipeOutput, ModItems.DIAMOND_APPLE.get(), RecipeCategory.FOOD, ModItems.NETHERITE_APPLE.get());
         netheriteSmithing(recipeOutput, ModItems.ENCHANTED_DIAMOND_APPLE.get(), RecipeCategory.FOOD, ModItems.ENCHANTED_NETHERITE_APPLE.get());
+
+//  HOW TO DO OPTIONAL DEPENDENCY RECIPE
+//        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.ENCHANTED_DIAMOND_APPLE.get())
+//                .pattern("DDD")
+//                .pattern("DAD")
+//                .pattern("DDD")
+//                .define('D', com.piggypiggyyoinkyoink.experimental.item.ModItems.DINGUS.get())
+//                .define('A', Items.APPLE)
+//                .unlockedBy("has_dingus", has(com.piggypiggyyoinkyoink.experimental.item.ModItems.DINGUS)).save(recipeOutput.withConditions(new ModLoadedCondition("piggypiggyyoinkyoink")), "test_dingus");
+
+//  HOW TO DO RECIPE WITH TAGS FROM OTHER MODS - NOTE: DEFINE THE TAGS IN MODTAGS FIRST
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.RUBY_APPLE.get())
+                .pattern("DDD")
+                .pattern("DAD")
+                .pattern("DDD")
+                .define('D', ModTags.Items.RUBY_GEMS)
+                .define('A', Items.APPLE)
+                .unlockedBy("has_ruby", has(ModTags.Items.RUBY_GEMS)).save(recipeOutput.withConditions(not(new TagEmptyCondition("c:gems/ruby"))), "ruby_apple");
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.SAPPHIRE_APPLE.get())
+                .pattern("DDD")
+                .pattern("DAD")
+                .pattern("DDD")
+                .define('D', ModTags.Items.SAPPHIRE_GEMS)
+                .define('A', Items.APPLE)
+                .unlockedBy("has_sapphire", has(ModTags.Items.SAPPHIRE_GEMS)).save(recipeOutput.withConditions(not(new TagEmptyCondition("c:gems/sapphire"))), "sapphire_apple");
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.ONYX_APPLE.get())
+                .pattern("DDD")
+                .pattern("DAD")
+                .pattern("DDD")
+                .define('D', ModTags.Items.ONYX_GEMS)
+                .define('A', Items.APPLE)
+                .unlockedBy("has_onyx", has(ModTags.Items.ONYX_GEMS)).save(recipeOutput.withConditions(not(new TagEmptyCondition("c:gems/onyx"))), "onyx_apple");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.TIN_APPLE.get())
+                .pattern("DDD")
+                .pattern("DAD")
+                .pattern("DDD")
+                .define('D', ModTags.Items.TIN_INGOTS)
+                .define('A', Items.APPLE)
+                .unlockedBy("has_tin", has(ModTags.Items.TIN_INGOTS)).save(recipeOutput.withConditions(not(new TagEmptyCondition("c:ingots/tin"))), "tin_apple");
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.BRASS_APPLE.get())
+                .pattern("DDD")
+                .pattern("DAD")
+                .pattern("DDD")
+                .define('D', ModTags.Items.BRASS_INGOTS)
+                .define('A', Items.APPLE)
+                .unlockedBy("has_brass", has(ModTags.Items.BRASS_INGOTS)).save(recipeOutput.withConditions(not(new TagEmptyCondition("c:ingots/brass"))), "brass_apple");
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.BRONZE_APPLE.get())
+                .pattern("DDD")
+                .pattern("DAD")
+                .pattern("DDD")
+                .define('D', ModTags.Items.BRONZE_INGOTS)
+                .define('A', Items.APPLE)
+                .unlockedBy("has_bronze", has(ModTags.Items.BRONZE_INGOTS)).save(recipeOutput.withConditions(not(new TagEmptyCondition("c:ingots/bronze"))), "bronze_apple");
+
 
 
 
@@ -229,5 +289,4 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlocks("has_netherite_ingot", has(Items.NETHERITE_INGOT))
                 .save(recipeOutput, Apples.MODID + ":" + getItemName(pResult) + "_from_smithing");
     }
-
 }

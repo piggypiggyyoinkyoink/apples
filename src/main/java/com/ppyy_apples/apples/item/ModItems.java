@@ -2,12 +2,23 @@ package com.ppyy_apples.apples.item;
 
 import com.ppyy_apples.apples.Apples;
 import com.ppyy_apples.apples.item.custom.EnchantedAppleItem;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
+import net.minecraft.tags.TagManager;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.Tags;
+import net.neoforged.neoforge.common.conditions.ConditionContext;
+import net.neoforged.neoforge.common.conditions.ICondition;
+import net.neoforged.neoforge.common.conditions.TagEmptyCondition;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
+
+
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Apples.MODID);
 
     public static final DeferredItem<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple",
@@ -46,6 +57,25 @@ public class ModItems {
             () -> new EnchantedAppleItem(new Item.Properties()
                     .food(ModFoodProperties.ENCHANTED_NETHERITE_APPLE)
                     .fireResistant()));
+
+    //if(not(new TagEmptyCondition("c:ingots/tin"))){
+
+
+    public static final DeferredItem<Item> TIN_APPLE = ITEMS.register("tin_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.TIN_APPLE)));
+    public static final DeferredItem<Item> BRASS_APPLE = ITEMS.register("brass_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BRASS_APPLE)));
+    public static final DeferredItem<Item> BRONZE_APPLE = ITEMS.register("bronze_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BRONZE_APPLE)));
+
+    public static final DeferredItem<Item> RUBY_APPLE = ITEMS.register("ruby_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.RUBY_APPLE)));
+    public static final DeferredItem<Item> SAPPHIRE_APPLE = ITEMS.register("sapphire_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SAPPHIRE_APPLE)));
+    public static final DeferredItem<Item> ONYX_APPLE = ITEMS.register("onyx_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ONYX_APPLE)));
+    public static final DeferredItem<Item> JADE_APPLE = ITEMS.register("jade_apple",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.JADE_APPLE)));
 
 
 

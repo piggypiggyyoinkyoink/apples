@@ -31,5 +31,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.AMETHYST_APPLE.get());
         basicItem(ModItems.ENCHANTED_AMETHYST_APPLE.get());
 
+        basicItem(ModItems.RUBY_APPLE.get());
+        basicItem(ModItems.SAPPHIRE_APPLE.get());
+        basicItem(ModItems.ONYX_APPLE.get());
+        basicItem(ModItems.JADE_APPLE.get());
+
+        basicItem(ModItems.TIN_APPLE.get());
+        basicItem(ModItems.BRASS_APPLE.get());
+        basicItem(ModItems.BRONZE_APPLE.get());
+
     }
 }

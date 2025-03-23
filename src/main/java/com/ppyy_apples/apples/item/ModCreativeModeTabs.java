@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ENCHANTED_IRON_APPLE);
                         output.accept(ModItems.DIAMOND_APPLE);
                         output.accept(ModItems.ENCHANTED_DIAMOND_APPLE);
+                        output.accept(ModItems.NETHERITE_APPLE);
+                        output.accept(ModItems.ENCHANTED_NETHERITE_APPLE);
                         output.accept(ModItems.EMERALD_APPLE);
                         output.accept(ModItems.ENCHANTED_EMERALD_APPLE);
                         output.accept(ModItems.AMETHYST_APPLE);
@@ -35,10 +37,17 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ENCHANTED_PRISMARINE_APPLE);
                         output.accept(ModItems.QUARTZ_APPLE);
                         output.accept(ModItems.ENCHANTED_QUARTZ_APPLE);
-                        output.accept(ModItems.NETHERITE_APPLE);
-                        output.accept(ModItems.ENCHANTED_NETHERITE_APPLE);
 
+                        output.accept(ModItems.RUBY_APPLE);
+                        output.accept(ModItems.SAPPHIRE_APPLE);
+                        output.accept(ModItems.ONYX_APPLE);
+                        output.accept(ModItems.JADE_APPLE);
+
+                        output.accept(ModItems.TIN_APPLE);
+                        output.accept(ModItems.BRASS_APPLE);
+                        output.accept(ModItems.BRONZE_APPLE);
                     })
+
                     .build());
     public static void register(IEventBus eventBus){
         CREATIVE_MODE_TAB.register(eventBus);

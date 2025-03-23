@@ -5,11 +5,11 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFoodProperties {
-    public static final FoodProperties RADISH = new FoodProperties.Builder()
-            .nutrition(3)
-            .saturationModifier(0.25f)
-            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 400), 0.35f)
-            .build(); //other methods than .effect() exist too, e.g. alwaysEdible() (for gapples etc), usingConvertsTo() (e.g. to get the bowl back after eating stew)
+//    public static final FoodProperties RADISH = new FoodProperties.Builder()
+//            .nutrition(3)
+//            .saturationModifier(0.25f)
+//            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 400), 0.35f)
+//            .build(); //other methods than .effect() exist too, e.g. alwaysEdible() (for gapples etc), usingConvertsTo() (e.g. to get the bowl back after eating stew)
     //doubletap shift and search foods in classes for info on how to balance stats etc
     // to make into a drink make a custom item class for the food and override the use animation
 
@@ -146,6 +146,62 @@ public class ModFoodProperties {
             .alwaysEdible()
             .build();
 
+
+    public static final FoodProperties TIN_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(7.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 0), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties BRASS_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1800, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 1200, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 0), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties BRONZE_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 3600, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2400, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 3600, 0), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties RUBY_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 2400, 1), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 0), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties SAPPHIRE_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 2400, 1), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.SATURATION, 2400, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 1), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties ONYX_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 4800, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2400, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2400, 0), 1.0f)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties JADE_APPLE = new FoodProperties.Builder()
+            .nutrition(3)
+            .saturationModifier(8.5f)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 4800, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2400, 0), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 4800, 1), 1.0f)
+            .effect(() -> new MobEffectInstance(MobEffects.SATURATION, 200, 0), 1.0f)
+            .alwaysEdible()
+            .build();
 
 
 }

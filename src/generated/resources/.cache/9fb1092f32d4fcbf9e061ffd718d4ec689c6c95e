@@ -1,6 +1,18 @@
-// 1.21.1	2025-03-16T22:20:20.9657011	Recipes
+// 1.21.1	2025-03-23T18:45:38.9228593	Recipes
+b891308e7a22e11909bbce1fcf07af948029dd6f data/minecraft/advancement/recipes/food/brass_apple.json
+1881843d56be1e3003bf2400835066f4e9df18c6 data/minecraft/advancement/recipes/food/bronze_apple.json
 f9d1f1939e77cd2cc719f40b57493c90440fa4aa data/minecraft/advancement/recipes/food/enchanted_golden_apple.json
+3e97932f88d48f506674e8b69ca59450f1268035 data/minecraft/advancement/recipes/food/onyx_apple.json
+864af0dbe7ad91ef84f63aff82c97dfe3697477e data/minecraft/advancement/recipes/food/ruby_apple.json
+4a4277f4e32b19934d7edc4d752ed11a663d6511 data/minecraft/advancement/recipes/food/sapphire_apple.json
+4c52d370b60fd6164ff225a0b6f8fef62330036b data/minecraft/advancement/recipes/food/tin_apple.json
+78c9a9075e07692ec767182fc1b8ea283744bdcd data/minecraft/recipe/brass_apple.json
+f1df877e8a90d41a6ee1c3dead5d513a8023f347 data/minecraft/recipe/bronze_apple.json
 aaeef976d95c49ecf4b52de09c14a913e26f2a76 data/minecraft/recipe/enchanted_golden_apple.json
+ed222b57770fddcb6d30b30e376dd268047a4a32 data/minecraft/recipe/onyx_apple.json
+431a2563cea1f504e1ba2efc96774c801e7484a0 data/minecraft/recipe/ruby_apple.json
+24edb43cc624a9045bc562e5b214d3026a27ea07 data/minecraft/recipe/sapphire_apple.json
+c3c703ddebbdd47cace103e8073f8b10cfd93989 data/minecraft/recipe/tin_apple.json
 5c0b1aac369297cbfa9e42277ee70bfc79b3f2bb data/ppyy_apples/advancement/recipes/food/amethyst_apple.json
 e81f3961825104df36b72873a72b60ef12fd76ef data/ppyy_apples/advancement/recipes/food/copper_apple.json
 3fc728406e9f205603d5d961bf1dc6ecacfe9337 data/ppyy_apples/advancement/recipes/food/diamond_apple.json

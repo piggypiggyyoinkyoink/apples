@@ -1,5 +1,7 @@
-// 1.21.1	2025-03-16T22:25:43.0771365	Item Models: ppyy_apples
+// 1.21.1	2025-03-23T18:45:38.9258977	Item Models: ppyy_apples
 9ebf7068eb8779d1f8f9a39b3ba3bf5e4bc0ef35 assets/ppyy_apples/models/item/amethyst_apple.json
+c7d2d44cde09c565ac8fef03475a7c7dd160d26b assets/ppyy_apples/models/item/brass_apple.json
+62655c2145a8adb09c2579d68f26389f1a717ed7 assets/ppyy_apples/models/item/bronze_apple.json
 c505a59b2b32d488d6c20c8b6c33dcb1eecc8dd9 assets/ppyy_apples/models/item/copper_apple.json
 160aa72bbfaf527cbab6c9288548a648887f6392 assets/ppyy_apples/models/item/diamond_apple.json
 d3e9e02e86c5380b54a95b23cfc90f3abd56c092 assets/ppyy_apples/models/item/emerald_apple.json
@@ -12,6 +14,11 @@ b71d0d2ae133dccb1e4776134a4920aa6fc1fecf assets/ppyy_apples/models/item/enchante
 3dffeded3cbc0c690336f7ee8ca5e4432616dbe7 assets/ppyy_apples/models/item/enchanted_prismarine_apple.json
 3a5d558521a2229bbb00ce9cdcfad892e9f0e7c4 assets/ppyy_apples/models/item/enchanted_quartz_apple.json
 c57334d570551bf825f750df92837803059248da assets/ppyy_apples/models/item/iron_apple.json
+b78fa80f214d7836288f3d91d4c6f7b04701872a assets/ppyy_apples/models/item/jade_apple.json
 cc6d8742ea4298c0091f5155c5205547acb2e0f4 assets/ppyy_apples/models/item/netherite_apple.json
+c1cbdf2bf27492046355d1e317486f9e9148d7b0 assets/ppyy_apples/models/item/onyx_apple.json
 f8c9bcf4a7ab54b933eee8a452760da80040de93 assets/ppyy_apples/models/item/prismarine_apple.json
 e0041fde68bba9a683cd939e14c74bca3f7be8b5 assets/ppyy_apples/models/item/quartz_apple.json
+43d82d170818adaa15dda2677f42ca141af2f149 assets/ppyy_apples/models/item/ruby_apple.json
+2d15f6e461ff39a996e8b74cc83d4b1ffa2fe54a assets/ppyy_apples/models/item/sapphire_apple.json
+7334e34b93f9c60175634bae533cc0b31d40f0bb assets/ppyy_apples/models/item/tin_apple.json
